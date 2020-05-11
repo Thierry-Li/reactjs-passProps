@@ -7,17 +7,21 @@ import { Footer } from "./components/Footer";
 import { RouterPath } from "./navigator/RouterPath";
 
 export default function App() {
-  return (
-    <Router>
-      <div className="App">
-        <h1>Hello CodeSandbox</h1>
-        <div style={{ borderBottom: "solid green" }}>
-          <MainPage />
-        </div>
-        <Nav />
-        <RouterPath />
-        <Footer />
-      </div>
-    </Router>
-  );
+	return (
+		<Router>
+			<div
+				className="App"
+				style={{
+					backgroundColor: "lightYellow",
+				}}
+			>
+				<h1>Hello CodeSandbox</h1>
+				<Nav />
+				<RouterPath />
+				<MainPage />
+
+				<Footer />
+			</div>
+		</Router>
+	);
 }
